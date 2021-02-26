@@ -1,0 +1,15 @@
+package com.tts.subscriberlist1.subscriber;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+//@Controller lets Spring know what this class is
+@Controller
+public class SubscriberController {
+
+	@GetMapping
+	public String index(Subscriber subscriber) {
+		return "subscriber/index";
+	}
+	
+}
